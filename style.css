@@ -927,3 +927,11 @@ body::selection {
 .social-icons a:nth-child(6) i:hover {
   color: #3b5998;
 }
+
+@media screen and (max-width: 768px) {
+  /* Styles pour les smartphones */
+}
+
+@media screen and (min-width: 769px) {
+  /* Styles pour les PC */
+}
