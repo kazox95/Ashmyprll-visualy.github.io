@@ -316,7 +316,7 @@ body::selection {
   width: 100px;
   height: 100px;
   transform-style: preserve-3d;
-  animation: animateCircle 40s linear infinite;
+  animation: animateCircle 18s linear infinite;
 }
 
 @keyframes animateCircle {
