@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
-/* ---------- GLOBAL STYLING ---------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -315,8 +315,9 @@ body::selection {
   left: 220px;
   width: 100px;
   height: 100px;
+
   transform-style: preserve-3d;
-  animation: animateCircle 18s linear infinite;
+  animation: animateCircle 15s linear infinite;
 }
 
 @keyframes animateCircle {
@@ -929,6 +930,22 @@ body::selection {
   color: #3b5998;
 }
 
+@media screen and (max-width: 768px) {
+  /* Styles pour les smartphones */
+}
+
+@media screen and (min-width: 769px) {
+  /* Styles pour les PC */
+}
+
+body {
+  cursor: url('custom-cursor.png'), auto;
+}
+
+
+
+
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -997,10 +1014,53 @@ body::selection {
 
 
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin: 10%;
+  text-align:center
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
 
 
-
-
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
 
 
 
@@ -1013,7 +1073,7 @@ body::selection {
   .glass {
   width: 500px;
   height: 400px;
-  background-color: rgba(250, 250, 250, 0.1);
+  background-color: rgba(255, 248, 248, 0.603);
   padding: 50px;
   color: #000;
   border-radius: 9px;
@@ -1070,17 +1130,6 @@ body::selection {
   margin-top: 30px;
   }
   
-
-
-
-
-
-
-
-
-
-
-
 
 
 
