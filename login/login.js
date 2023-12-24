@@ -4,6 +4,7 @@ var credentials = [
     { username: 'utilisateur2', password: 'motdepasse2' },
     { username: 'salut', password: 'salut' },
   { username: 'Gsv238', password: 'Genilson238' },
+    { username: 'Shadowdark', password: 'Shadow28@28@' },
     
   ];
   
