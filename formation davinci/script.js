@@ -162,20 +162,40 @@ downloadPage(url)
     "le codage sa paye?" : " les pubs,site sponsorisée la on peut se faire un peu d'argent,si tu fais des sites au autres sa ce niveau oui sa monte vite. ",
     "Ta un diplome?" : "Nope mdrr😅 ",
     "ta un diplome?" : "Nope mdrr😅 ",
-    "cool ta vie" : "de rien ",
+    "cool ta vie" : "😒😔",
     "trkl?" : "tqt chu biengg mdrr🤣 ",
     "trkl" : "tqt chu biengg mdrr🤣 ",
     "Y'a moyen j'apprend a coder?" : "Bien sur si ta bsn d'aide viens DM Insta ",
-    "Salut" : "Slt!:)  ",
-    "salut" : "Slt!:)  ",
-    "slt" : "Slt!:)  ",
-    "Slt" : "Slt!:)  ",
+    "Salut" : "Slt! :)  ",
+    "salut" : "Slt! :)  ",
+    "slt" : "Slt! :)  ",
+    "Slt" : "Slt! :)  ",
     "Tu gagnes combien avec le codage ?" : " :)  ",
     "tu gagnes combien avec le codage ?" : " :)  ",
+    "Bv" : " Tqt :) ",
+    "bv" : " Tqt :) ",
+    "Oklm" : " Ouaisss ",
+    "oklm" : " Ouaisss  ",
+    "Quel est le meilleur logiciel pour commencer a monter?" : " Davinci Resolve 18  ",
+    "Comment on cut sur Davinci Resolve 18" : " Click droit-Split à l'endroit souhaité  ",
+    "Pourquoi tu t'es lancer dans le codage?" : " Prcq j'ai eu un prof qui a un site sa m'a donné envie,de + je souhaite travailler concrètement dans ce domaine  ",
+    "Tu fais du graphisme?" : " Canva,photoshop j'ai essayer je fais des choses pas incroyable,donc je dirais non.  ",
+    "On peut coder sur tél?" : " Surement vu la technologie de nos jours mais je pense que c'est pas pratique.  ",
+    "Quel est ton langage de code préféré" : "     CSS;Javascript pourtant j'utilise pas beaucoup de javascript mais j'apprécie.  ",
+    "biengg?" : " Ouaisss  ",
+    "oklm" : " Ouaisss  ",
+    "Je peux avoir mes Identifiants?" : " DM MOI INSTA ",
+    "Je peux reavoir mes Identifiants?" : " DM MOI INSTA ",
+    "Je peux avoir mon mot de passe?" : " DM MOI INSTA ",
+    "J'ai oublié mon mot de passe'" : " DM MOI INSTA ",
+    "T'es en auto-entreprise?'" : " Nope chuis free ",
 
 
 
 
+
+
+"bye" : "Salut!",
     "Bye" : "Salut!"
     };
     var user = document.getElementById('userBox').value;
