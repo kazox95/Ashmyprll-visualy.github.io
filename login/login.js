@@ -7,7 +7,7 @@ var credentials = [
     { username: 'Shadowdark', password: 'Shadow28@28@' },
     { username: 'Moi', password: 'Toi' },
     { username: 'Kyliandu95', password: '2b_190' },
-    
+    { username: 'Tgr95g', password: '359359Tt-' },
   ];
   
   function login() {
