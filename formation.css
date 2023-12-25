@@ -1267,3 +1267,9 @@ a {
     background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }
+
+
+  .nopen{
+    color: #002bff;
+    background-color: #002bff;
+  }
