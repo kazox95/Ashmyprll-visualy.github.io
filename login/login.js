@@ -22,7 +22,7 @@ var credentials = [
     if (isValidCredentials) {
       ('Connexion rÃ©ussie');
      
-      window.location.href = './infex.html';
+      window.location.href = './sécurité+.html';
     } else {
       alert('Nom d\'utilisateur ou mot de passe incorrect');
     }
