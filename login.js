@@ -212,6 +212,7 @@ var credentials = [
   { username: 'Kyliandu95', password: '2b_190' },
   { username: 'Tgr95g', password: '359359Tt-' },
   { username: 'gratuit', password: 'gratuit' },
+  { username: 'invitegratuitp02', password: 'invite02' },
 ];
 
 function login() {
@@ -230,8 +231,11 @@ function login() {
           case 'gratuit':
               window.location.href = './gratosindex.html';
               break;
-          case 'utilisateur2':
-              window.location.href = 'page_utilisateur2.html';
+          case '':
+              window.location.href = '.html';
+              break;
+              case 'invitegratuitp02':
+              window.location.href = './gratosindex.html';
               break;
          
           default:
