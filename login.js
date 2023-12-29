@@ -233,7 +233,7 @@ function login() {
           case 'gratuit':
               window.location.href = './gratosindex.html';
               break;
-          case 'cdashmyprl02':
+          case 'Techengineer':
               window.location.href = './cotéadmin.html';
               break;
               case 'cdashmyprl02':
