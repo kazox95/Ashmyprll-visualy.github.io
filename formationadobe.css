@@ -32,32 +32,6 @@ html, body, svg {
     animation: back-color 11s infinite linear;
   }
   
-  @keyframes draw {
-    from {
-      stroke-dashoffset: 388.5;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  @keyframes stroke-color {
-    0%      {stroke: hsl(  0,100%,70%);}
-    16.667% {stroke: hsl( 60,100%,70%);}
-    33.333% {stroke: hsl(120,100%,70%);}
-    50%     {stroke: hsl(180,100%,70%);}
-    66.667% {stroke: hsl(240,100%,70%);}
-    83.333% {stroke: hsl(300,100%,70%);}
-    100%    {stroke: hsl(360,100%,70%);}
-  }
-  @keyframes back-color {
-    0%      {background: hsl(0, 0%, 43%);}
-    16.667% {background: hsl(0, 12%, 87%);}
-    
-    50%     {background: hsl(0, 0%, 71%);}
-    66.667% {background: hsl(56, 69%, 65%);}
-    83.333% {background: hsl(0, 89%, 75%);}
-    100%    {background: hsl(0, 8%, 69%);}
-  }
 
 
 
@@ -593,8 +567,6 @@ width: 130vh;
               font-size: 60px;
               font-style: normal;
             }
-
-
 
 
 
