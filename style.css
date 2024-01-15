@@ -214,19 +214,22 @@ body::selection {
   font-weight: 800;
 }
 
-/* ---------- SECTION BODY CONTENT ---------- */
+/* ---------- repere body  ---------- */
 #content-body {
+  animation: scroll 25s linear infinite;
+background-image: linear-gradient( 45deg, #2f7782, #313a39, #3e3d3e, #ff0000  ) ;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
   display: flex;
-  background-color: #2d2e32;
-  align-items: flex-start;
-  height: 90vh;
-  align-content: center;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 100px 0 0 100px;
-  margin-bottom: 10vh;
-  max-height: 100vh;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
 }
+
+
 
 .developer-intro {
   display: flex;
@@ -292,7 +295,7 @@ body::selection {
 }
 
 .background-circle {
-  background: #28292d;
+  background: transparent;
   border-radius: 50%;
   width: 550px;
   height: 550px;
@@ -1071,9 +1074,9 @@ body {
   }
 
   .glass {
-  width: 500px;
-  height: 400px;
-  background-color: rgba(255, 248, 248, 0.603);
+  width: 846px;
+  height: 843px;
+background: url(./chatlog.png);
   padding: 50px;
   color: #000;
   border-radius: 9px;
@@ -1102,13 +1105,20 @@ body {
   font-size: 1.7rem;
   }
   .glass h1 {
-  font-size: 1.5rem;
+  font-size: 4.5rem;
   text-align: center;
+  color: #00fffb;
   }
-  .glass h2 {
-  font-size: 1rem;
+  .trkl h4 {
+  font-size: 1.4rem;
   margin-top: 20px;
+  color: #eeff00;
   }
+.trkl a {
+  color: rgb(234, 255, 0);
+}
+
+
   .input {
   width: 100%;
   height: 70px;
@@ -1126,8 +1136,12 @@ body {
   border-radius: 20px;
   }
   .glass p {
-  font-size: 1.6rem;
+  font-size: 35px;
   margin-top: 30px;
+  color: rgb(255, 255, 255) ;
+  background-image: linear-gradient( 45deg, #000000, #e3cfcf, #ff0000, #00fff7  ) ;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
   }
   
 
@@ -1164,3 +1178,16 @@ body {
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
 }
+
+
+
+
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+
+
