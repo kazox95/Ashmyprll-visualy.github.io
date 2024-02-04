@@ -35,6 +35,48 @@
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    envoyerNotificationAuto();
+
+    if (!localStorage.getItem('notificationAuRevoirAffichee')) {
+        
+        const leaveDate = new Date();
+
+      
+        const interval = setInterval(() => {
+ 
+            if (document.hidden) {
+           
+                clearInterval(interval);
+            }
+        }, 10);
+    }
+});
+
+function envoyerNotificationAuto() {
+    if (Notification.permission === 'granted') {
+        const options = {
+            body: 'Bienvenue ! Boostez votre apprentissage du codage et du montage. Besoin d\'aide ? Je suis là !',
+            icon: 'https://cmgvisualy.onrender.com/Newlogo.png'
+        };
+
+        const notification = new Notification('Ashmy_Prl X C.M.G_Visualy', options);
+
+        notification.onclick = function () {
+            console.log('Notification cliquée.');
+        };
+    } else {
+        demanderPermissionNotificationLocale();
+    }
+}
+
+function effacerNotificationAuRevoir() {
+
+    localStorage.removeItem('notificationAuRevoirAffichee');
+}
+
+
+
 
 
 
@@ -450,45 +492,3 @@ downloadPage(url)
 //copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy//copyrightashmy
 
 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    envoyerNotificationAuto();
-
-    if (!localStorage.getItem('notificationAuRevoirAffichee')) {
-        
-        const leaveDate = new Date();
-
-      
-        const interval = setInterval(() => {
- 
-            if (document.hidden) {
-           
-                clearInterval(interval);
-            }
-        }, 10);
-    }
-});
-
-function envoyerNotificationAuto() {
-    if (Notification.permission === 'granted') {
-        const options = {
-            body: 'Bienvenue ! Boostez votre apprentissage du codage et du montage. Besoin d\'aide ? Je suis là !',
-            icon: 'https://cmgvisualy.onrender.com/Newlogo.png'
-        };
-
-        const notification = new Notification('Ashmy_Prl X C.M.G_Visualy', options);
-
-        notification.onclick = function () {
-            console.log('Notification cliquée.');
-        };
-    } else {
-        demanderPermissionNotificationLocale();
-    }
-}
-
-function effacerNotificationAuRevoir() {
-
-    localStorage.removeItem('notificationAuRevoirAffichee');
-}
