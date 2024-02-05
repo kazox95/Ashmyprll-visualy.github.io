@@ -35,21 +35,44 @@
 
 
 
+function onNotify() {
+    console.log("NOTIFY INIT");
+    if (Notification && Notification.permission === 'granted') {
+       
+        console.log("Permission accordée");
+    } else {
+        demanderPermissionNotificationLocale();
+    }
+}
+
+function demanderPermissionNotificationLocale() {
+    Notification.requestPermission().then(function (permission) {
+        if (permission === 'granted') {
+            console.log('Permission accordée');
+            envoyerNotificationAuto();
+        } else {
+            console.log('Permission refusée');
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     envoyerNotificationAuto();
 
     if (!localStorage.getItem('notificationAuRevoirAffichee')) {
-        
         const leaveDate = new Date();
 
-      
         const interval = setInterval(() => {
- 
             if (document.hidden) {
-           
                 clearInterval(interval);
             }
         }, 10);
+    }
+
+    
+    const notifyButton = document.getElementById('notifybutton'); 
+    if (notifyButton) {
+        notifyButton.addEventListener('click', onNotify);
     }
 });
 
@@ -71,9 +94,9 @@ function envoyerNotificationAuto() {
 }
 
 function effacerNotificationAuRevoir() {
-
     localStorage.removeItem('notificationAuRevoirAffichee');
 }
+
 
 
 
