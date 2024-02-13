@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "SERVICE CLASSIQUE",
+        "actual_price": 0,
+        "display_price": "Gratuit",
+        "image": "./ssssssssvvvvvvvvvvggggggggggggg.png"
+    },
+    {
+        "id": 2,
+        "name": "SERVICE PREMIUM +",
+        "actual_price": 400,
+        "display_price": "400€/AN",
+        "image": "./svg prems.png"
+    }
+]

@@ -500,7 +500,14 @@ downloadPage(url)
 
     
 
+    function submitForm(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du formulaire
+        
+        // Votre code pour effectuer toute autre action nécessaire
 
+        // Redirection vers votre autre page
+        window.location.href = "chemin/vers/votre/page.html";
+    }
 
 
 

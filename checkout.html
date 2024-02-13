@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylec.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="checkoutLayout">
+
+        
+        <div class="returnCart">
+            <a href="./indexx.html">CHANGER D'ABONNEMENT</a> -
+            <a href="./index.html"> Accueil </a>
+            <h1>Panier : </h1>
+            <div class="list">
+
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h1>INFOS</h1>
+            <h3>
+                <font color="white" > En cas de bug ACTUALISE LA PAGE, REMPLIS TOUT LES CHAMPS (le pays aussi) Avant de Payer sinon sa ne marcheras pas. </font>
+            </h3>
+
+            <div class="form">
+                <div class="group">
+                    <label for="name">Prénom + Nom</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="group">
+                    <label for="phone">Numéro de Téléphone</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+    
+                <div class="group">
+                    <label for="address">Adresse Mail </label>
+                    <input type="text" name="address" id="address">
+                </div>
+    
+                <div class="group">
+                    <label for="country">Pays</label>
+                    <select name="country" id="country">
+                        <option value=""> Autre </option>
+                        <option value="France">France</option>
+                    </select>
+                </div>
+
+                <div class="return">
+                    <div class="row">
+                        <div>Quantité :  </div>
+                        <div class="totalQuantity">70</div>
+                    </div>
+                    <div class="row">
+                        <div>Total :</div>
+                        <div class="totalPrice"></div>
+                    </div>
+                </div>
+                
+                <button class="buttonCheckout" onclick="handleCheckout()">PAYER</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
