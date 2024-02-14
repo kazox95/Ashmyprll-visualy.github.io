@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="./LOGOOGOOGO-removebg-preview.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
+
 <style>
 
 .cart-item {
@@ -17,7 +19,7 @@
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 10px;
-        background: -webkit-linear-gradient(-30deg, #e4dfe4 0%, #000000 100%);
+        background: -webkit-linear-gradient(-30deg, #e4dfe4 0%, #555252 80%);
         height: auto;
         width: auto;
     }
@@ -44,46 +46,53 @@
     
     }
 
-  
+
 </style>
+
 <body>
-   
-        <h1>Récapitulatif de la commande </h1>
-        <div class="list">
-         
-        </div>
+    <h1>Récapitulatif de la commande </h1>
+ 
+ 
+ 
+ 
+    <div class="list">
 
-        <div id="orderDetails">
-            <h2></h2>
-            <center>
-               
-                
-                <div id="orderNumber">Numéro de commande : </div>
-                <div id="orderTotal">Montant total : </div>
-            </center>
-            <br>
-            <div class="list" id="listCart" style="margin: 10px;">
-              
-            </div>
-        </div>
-
-        <h1>Générateur de Facture</h1>
-        <button onclick="generatePDF()">Imprimer/Télécharger la Facture</button>
     </div>
+
+    <div id="orderDetails">
+        <h2></h2>
+        <center>
+            <div id="orderNumber">Numéro de commande : </div>
+            <div id="orderTotal">Montant total : </div>
+        </center>
+        <br>
+        <div class="list" id="listCart" style="margin: 10px;">
+
+        </div>
+    </div>
+
+    <h1>Générateur de Facture <font color="red" >(Générer 2fois le  PDF Sinon le pdf se génère pas complètement )</font>  <br> FACTURE NECESSAIRE EN CAS DE PROBLEME AU S.A.V (LES 2 PAGES)</h1>
+  <center>
+    <button onclick="generatePDF()">Imprimer/Télécharger la Facture</button>
+
+  </center> 
+    <br>
+    <br>
+   
 
     <script src="abonnement+_script.js"></script>
     <script>
-      // Récupérer les informations du client depuis le localStorage
-      var customerInfo = JSON.parse(localStorage.getItem('customerInfo'));
+        // Récupérer les informations du client depuis le localStorage
+        var customerInfo = JSON.parse(localStorage.getItem('customerInfo'));
 
-// Vérifier si les informations existent
-if (customerInfo) {
-    // Afficher les informations où vous le souhaitez dans votre page
-    document.getElementById('customerName').innerText = customerInfo.name;
-    document.getElementById('customerPhone').innerText = customerInfo.phone;
-    document.getElementById('customerAddress').innerText = customerInfo.address;
-    document.getElementById('customerCountry').innerText = customerInfo.country;
-}
+        // Vérifier si les informations existent
+        if (customerInfo) {
+            // Afficher les informations où vous le souhaitez dans votre page
+            document.getElementById('customerName').innerText = "Nom : " + customerInfo.name;
+            document.getElementById('customerPhone').innerText = "Téléphone : " + customerInfo.phone;
+            document.getElementById('customerAddress').innerText = "Adresse : " + customerInfo.address;
+            document.getElementById('customerCountry').innerText = "Pays : " + customerInfo.country;
+        }
     </script>
 </body>
 
