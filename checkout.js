@@ -88,23 +88,23 @@ checkoutButton.addEventListener('click', function () {
 
         // Rediriger en fonction du montant total
         if (totalPrice <= 1) {
-            // Montant inférieur ou égal à 1€
+         
             window.location.href = "lien_montant_inferieur.html";
         } else {
-            // Montant supérieur à 1€
-            // Générer un numéro de commande aléatoire
+          
+          
             let orderNumber = generateOrderNumber();
 
             // Stocker le numéro de commande dans le localStorage
             localStorage.setItem('orderNumber', orderNumber);
 
-            // Stocker le montant de la commande dans le localStorage
+           
             localStorage.setItem('orderTotal', totalPrice.toFixed(2));
 
-            // Stocker également le panier dans le localStorage
+         
             localStorage.setItem('listCart', JSON.stringify(listCart));
 
-            // Stocker les informations dans le localStorage
+           
             localStorage.setItem('customerInfo', JSON.stringify({ name, phone, address, country }));
 
             // Rediriger vers la page abonnement+.html
@@ -115,9 +115,7 @@ checkoutButton.addEventListener('click', function () {
     }
 });
 
-// ...
 
-// Fonction pour générer un numéro de commande aléatoire
 function generateOrderNumber() {
     return Math.floor(Math.random() * 90000000) + 10000000;
 }
