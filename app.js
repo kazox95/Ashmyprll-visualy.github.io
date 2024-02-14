@@ -68,7 +68,16 @@ function addCart($idProduct){
         listCart[$idProduct] = productsCopy.filter(product => product.id == $idProduct)[0];
         listCart[$idProduct].quantity = 1;
     } else {
-        listCart[$idProduct].quantity++;
+    
+        if ($idProduct === 1 && listCart[$idProduct].quantity >= 1) {
+            alert("Limite atteinte pour l'abonnement classique' (max: 1).");
+            return;
+        } else if ($idProduct === 2 && listCart[$idProduct].quantity >= 3) {
+            alert("Limite atteinte pour l'abonnement premium'  (max: 3).");
+            return;
+        } else {
+            listCart[$idProduct].quantity++;
+        }
     }
 
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
@@ -151,6 +160,4 @@ function changeQuantity($idProduct, $type){
     addCartToHTML();
 }
 
-
 function checkout() {}
-
