@@ -212,7 +212,7 @@ var credentials = [
   { username: 'Kyliandu95', password: '2b_190' },
   { username: 'Tgr95g', password: '359359Tt-' },
   { username: 'gratuit', password: 'gratuit' },
-  { username: 'invitegratuitp02', password: 'invite02' },
+  { username: 'invitegratuitesp02', password: 'invite02' },
   { username: 'cdashmyprl02', password: 'ashmyprl02' },
   { username: 'Techengineer', password: 'admin01' },
 ];
