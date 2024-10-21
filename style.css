@@ -44,7 +44,7 @@ p {
 }
 
 .section-p1 {
-  padding: 40px 5%; /* Utilisation d'unités relatives */
+  padding: 40px 5%; 
 }
 
 .section-m1 {
@@ -54,7 +54,7 @@ p {
 button.normal {
   font-size: 14px;
   font-weight: 600;
-  padding: 15px 5%; /* Utilisation d'unités relatives */
+  padding: 15px 5%; 
   color: black;
   background-color: white;
   border-radius: 4px;
@@ -97,7 +97,7 @@ body::selection {
   background: #FEFEFE;
 }
 
-/* Media queries pour rendre le design responsive */
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -131,7 +131,7 @@ body::selection {
   }
 }
 
-/* ---------- SECTION HEADER ---------- */
+
 #header {
   padding: 20px 40px;
   display: flex;
@@ -236,7 +236,7 @@ body::selection {
   font-weight: 800;
 }
 
-/* Bouton pour écrans plus petits */
+
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -246,7 +246,7 @@ body::selection {
   font-size: 24px;
 }
 
-/* Media Query pour écrans plus petits */
+
 @media only screen and (max-width: 768px) {
   #header {
     padding: 15px 20px;
@@ -282,7 +282,7 @@ body::selection {
   }
 }
 
-/* ---------- repere body  ---------- */
+
 #content-body {
   animation: scroll 25s linear infinite;
   background-image: linear-gradient(45deg, #2f7782, #313a39, #3e3d3e, #ff0000);
@@ -297,11 +297,7 @@ body::selection {
   perspective-origin: 50% 50%;
 }
 
-/* Ajouter d'autres media queries au besoin */
 
-
-
-/* Styles communs à toutes les tailles d'écran */
 
 .developer-intro {
   display: flex;
@@ -427,7 +423,7 @@ body::selection {
   object-fit: cover;
 }
 
-/* Règles de média queries pour les écrans de petite taille (max-width: 767px) */
+
 
 @media only screen and (max-width: 767px) {
   .developer-intro {
@@ -455,9 +451,7 @@ body::selection {
   }
 }
 
-/* Ajoutez d'autres règles de média queries au besoin pour les autres tailles d'écran */
 
-/* ----------INTRODUCTION---------- */
 #introduction {
   display: flex;
   justify-content: space-between;
@@ -563,7 +557,7 @@ body::selection {
   font-weight: 600;
 }
 
-/* ----------LATEST WORKS---------- */
+
 #latest-works {
   min-height: 150vh;
   background-color: #25262a;
@@ -688,7 +682,7 @@ body::selection {
     margin: 20px 0;
   }
 
-  /* ... (ajoutez d'autres modifications au besoin) ... */
+
 }
 
 
@@ -712,20 +706,20 @@ body::selection {
   line-height: 26px;
 }
 
-/* ----------TESTIMONIAL---------- */
+
 #testimonial {
   height: 100vh;
   width: 100%;
-  padding: 100px 50px; /* Réduit la marge intérieure pour les écrans plus petits */
+  padding: 100px 50px; 
 }
 
 .testimonial-title {
   display: flex;
-  flex-direction: column; /* Change la direction pour les écrans plus petits */
-  max-width: 100%; /* Utilise la largeur maximale pour les écrans plus petits */
-  justify-content: center; /* Centre le contenu pour les écrans plus petits */
-  align-items: center; /* Centre le contenu pour les écrans plus petits */
-  text-align: center; /* Centre le texte pour les écrans plus petits */
+  flex-direction: column; 
+  max-width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
 
 .testimonial-title h4 {
@@ -736,7 +730,7 @@ body::selection {
 .testimonial-title p {
   color: #7c7d81;
   font-size: 14px;
-  align-self: center; /* Centre le texte pour les écrans plus petits */
+  align-self: center; 
   letter-spacing: -0.5px;
   font-weight: 600;
   margin: 6px;
@@ -746,9 +740,9 @@ body::selection {
   max-height: 300px;
   width: 100%;
   background-color: #25262a;
-  padding: 20px; /* Réduit la marge intérieure pour les écrans plus petits */
+  padding: 20px;
   border-radius: 8px;
-  margin: 20px 0; /* Réduit la marge extérieure pour les écrans plus petits */
+  margin: 20px 0; 
   display: block;
 }
 
@@ -757,7 +751,7 @@ body::selection {
   flex-direction: row;
   color: #64f4ac;
   align-items: center;
-  margin: 0 0 10px 0; /* Réduit la marge pour les écrans plus petits */
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
@@ -843,44 +837,43 @@ body::selection {
   text-decoration: underline;
 }
 
-/* Règles de média queries pour les écrans de taille moyenne (max-width: 1024px) */
+
 @media only screen and (max-width: 1024px) {
   #testimonial {
     padding: 50px;
   }
 }
 
-/* Règles de média queries pour les écrans de petite taille (max-width: 767px) */
+
 @media only screen and (max-width: 767px) {
   #testimonial {
     padding: 30px;
   }
 
   .testimonial-title h4 {
-    font-size: 24px; /* Ajuste la taille de la police pour les écrans plus petits */
+    font-size: 24px; 
   }
 
   .testimonial-title p {
-    font-size: 12px; /* Ajuste la taille de la police pour les écrans plus petits */
+    font-size: 12px; 
   }
 
   .testimonial-card {
-    max-height: none; /* Ajuste la hauteur maximale pour les écrans plus petits */
+    max-height: none; 
   }
 
   .testimonial-card h4 {
-    font-size: 20px; /* Ajuste la taille de la police pour les écrans plus petits */
-    line-height: 28px; /* Ajuste la hauteur de ligne pour les écrans plus petits */
+    font-size: 20px; 
+    line-height: 28px; 
   }
 
   .testimonial-card i:last-child {
-    top: -50px; /* Ajuste la position pour les écrans plus petits */
-    font-size: 40px; /* Ajuste la taille de la police pour les écrans plus petits */
+    top: -50px;
+    font-size: 40px; 
   }
 }
 
 
-/* ----------FOOTER---------- */
 #footer {
   display: flex;
   flex-direction: column;
@@ -1077,7 +1070,7 @@ body::selection {
   color: #3b5998;
 }
 
-/* Règles de média queries pour les écrans de petite taille (max-width: 767px) */
+
 @media screen and (max-width: 767px) {
   #footer {
     padding: 30px;
@@ -1099,7 +1092,7 @@ body::selection {
   }
 }
 
-/* Règles de média queries pour les écrans de taille moyenne (max-width: 1024px) */
+
 @media screen and (max-width: 1024px) {
   .email-form {
     width: 100%;
@@ -1111,7 +1104,7 @@ body::selection {
 
 
 
-/* ---------- GLOW ON HOVER BUTTON ---------- */
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -1172,7 +1165,7 @@ body::selection {
   100% { background-position: 0 0; }
 }
 
-/* ---------- OTHER BUTTON STYLES ---------- */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1218,7 +1211,7 @@ body::selection {
   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
-/* ---------- GLASS EFFECT ---------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -1303,7 +1296,7 @@ body::selection {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- HEADER STYLES ---------- */
+
 .h21 {
   font-size: 6em;
   font-weight: 500;
@@ -1466,7 +1459,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  /* Styles pour les smartphones */
   .section-title h2 {
     font-size: 28px;
   }
@@ -1489,7 +1481,7 @@ img {
 }
 
 @media screen and (min-width: 769px) {
-  /* Styles pour les PC */
+
   .section-title h2 {
     font-size: 36px;
   }
